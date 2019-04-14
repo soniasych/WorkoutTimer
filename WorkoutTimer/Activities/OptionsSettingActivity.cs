@@ -4,6 +4,7 @@ using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
 using WorkoutTimer.Views;
+using WorkoutTimer.Helpers;
 using Android.Content;
 using WorkoutTimer.Models;
 using Newtonsoft.Json;
@@ -70,6 +71,22 @@ namespace WorkoutTimer.Activities
             }));
 
             StartActivity(intent);
+        }
+
+        private void SaveTraining() // REWRITE TO EVENT!!!
+        {
+            TrainingModel modelToSave = new TrainingModel
+            {
+                ExercisesNumber = _exercisesCountOptionView.GetValue(),
+                SetsNumber = _setsCountOptionView.GetValue(),
+                SetsNumberCopy = _setsCountOptionView.GetValue(),
+                RestInterval = _restIntervalOptionView.GetValue(),
+                WorkInterval = _workIntervalOptionView.GetValue(),
+                RestBetweenExercisesInterval = _restBetweenExercisesOptionView.GetValue(),
+                IsNotificationsEnabled = _enableNotificationsSwitch.Checked
+            };
+
+            DbHelper.SaveTrainingData(modelToSave);
         }
 
     }

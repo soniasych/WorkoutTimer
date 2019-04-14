@@ -68,9 +68,11 @@
   <ItemGroup>
     <Compile Include="Activities\OptionsSettingActivity.cs" />
     <Compile Include="Activities\WorkoutActivity.cs" />
+    <Compile Include="Helpers\DbHelper.cs" />
     <Compile Include="Helpers\WorkoutCountDownTimer.cs" />
     <Compile Include="Helpers\TimeStruct.cs" />
     <Compile Include="Managers\TrainManager.cs" />
+    <Compile Include="Models\TrainingDTO.cs" />
     <Compile Include="Models\TrainingModel.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -153,7 +155,11 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_pauseWork.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\TrainingList.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
     Other similar extension points exist, see Microsoft.Common.targets.
