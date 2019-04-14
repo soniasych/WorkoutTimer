@@ -24,7 +24,7 @@ namespace WorkoutTimer.Activities
         private TextView _setsCountTextView;
         private TextView _timeTextView;
         private TextView _commandTextView;
-        private ImageView _pauseWourkoutImageView;
+        private ImageView _pauseWorkoutImageView;
         private LinearLayout _mainLayout;
         private bool isPaused = false;
         private string currentBackgroundColor = string.Empty;
@@ -46,15 +46,15 @@ namespace WorkoutTimer.Activities
         protected override void OnStart()
         {
             base.OnStart();
-            _pauseWourkoutImageView.Click += _pauseWourkoutImageView_Click;
+            _pauseWorkoutImageView.Click += PauseWorkoutImageViewClick;
         }
 
-        private void _pauseWourkoutImageView_Click(object sender, EventArgs e)
+        private void PauseWorkoutImageViewClick(object sender, EventArgs e)
         {
             if (isPaused)
             {
-                _manager.RestarWorkout();
-                _pauseWourkoutImageView.SetBackgroundResource(Resource.Drawable.ic_pauseWork);
+                _manager.RestartWorkout();
+                _pauseWorkoutImageView.SetBackgroundResource(Resource.Drawable.ic_pauseWork);
                 _mainLayout.SetBackgroundColor(Color.ParseColor(currentBackgroundColor));
                 isPaused = !isPaused;
             }
@@ -65,7 +65,7 @@ namespace WorkoutTimer.Activities
            
                 //Bitmap bitmap = BitmapFactory.DecodeResource(Resources, Resource.Drawable.ic_startWork);
                // Bitmap b = Bitmap.CreateScaledBitmap(bitmap,)
-                _pauseWourkoutImageView.SetBackgroundResource(Resource.Drawable.ic_startWork);
+                _pauseWorkoutImageView.SetBackgroundResource(Resource.Drawable.ic_startWork);
                 isPaused = !isPaused;
             }
 
@@ -93,7 +93,7 @@ namespace WorkoutTimer.Activities
             _setsCountTextView = FindViewById<TextView>(Resource.Id.Activity_Workout_SetCountTextView);
             _timeTextView = FindViewById<TextView>(Resource.Id.Activity_Workout_TimeTextView);
             _commandTextView = FindViewById<TextView>(Resource.Id.Activity_Workout_CommandTextView);
-            _pauseWourkoutImageView = FindViewById<ImageView>(Resource.Id.Activity_Workout_PauseWorkoutImageButton);
+            _pauseWorkoutImageView = FindViewById<ImageView>(Resource.Id.Activity_Workout_PauseWorkoutImageButton);
             _mainLayout = FindViewById<LinearLayout>(Resource.Id.Activity_Workout_Layout);
         }
 

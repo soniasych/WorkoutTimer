@@ -1,15 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Timers;
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using WorkoutTimer.Helpers;
 using WorkoutTimer.Models;
 using WorkoutTimer.Utils;
@@ -50,7 +39,7 @@ namespace WorkoutTimer.Managers
             _changeActivityTimer.Cancel();
         }
 
-        public void RestarWorkout()
+        public void RestartWorkout()
         {
             _changeActivityTimer.Start();
         }
