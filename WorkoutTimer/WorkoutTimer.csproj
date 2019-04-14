@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\OptionsSettingActivity.cs" />
+    <Compile Include="Activities\TrainingListActivity.cs" />
     <Compile Include="Activities\WorkoutActivity.cs" />
     <Compile Include="Helpers\DbHelper.cs" />
     <Compile Include="Helpers\WorkoutCountDownTimer.cs" />
