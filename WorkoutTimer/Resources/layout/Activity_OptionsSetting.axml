@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:weightSum="100"
+	android:background="#ff7a00"
+	android:alpha="0.75"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<include
+		layout="@layout/View_NumericalOption"
+		android:id="@+id/Activity_OptionsSetting_ExercisesCountOption"
+		android:layout_weight = "15"
+		android:layout_height = "0dp"
+		android:layout_width = "match_parent"
+		android:layout_marginTop="10dp"
+		/>
+	<include
+		layout="@layout/View_NumericalOption"
+		android:id="@+id/Activity_OptionsSetting_SetsCountOption"
+		android:layout_weight = "15"
+		android:layout_height = "0dp"
+		android:layout_width = "match_parent"
+		android:layout_marginTop="10dp"
+		/>
+	<include
+		layout="@layout/View_TimeOption"
+		android:id="@+id/Activity_OptionsSetting_WorkIntervalOption"
+		android:layout_weight = "15"
+		android:layout_height = "0dp"
+		android:layout_width = "match_parent"
+		android:layout_marginTop="10dp"
+		/>
+	<include
+		layout="@layout/View_TimeOption"
+		android:id="@+id/Activity_OptionsSetting_RestIntervalOption"
+		android:layout_weight = "15"
+		android:layout_height = "0dp"
+		android:layout_width = "match_parent"
+		android:layout_marginTop="10dp"
+		/>
+	<include
+		layout="@layout/View_TimeOption"
+		android:id="@+id/Activity_OptionsSetting_RestBetweenExercisesOption"
+		android:layout_weight = "15"
+		android:layout_height = "0dp"
+		android:layout_width = "match_parent"
+		android:layout_marginTop="10dp"
+		/>
+	<View
+		android:layout_height="0dp"
+		android:layout_width="match_parent"
+		android:layout_weight="10"
+		/>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="10"
+		android:orientation="horizontal"
+		android:weightSum="100"
+		>
+		<Switch
+			android:id="@+id/Activity_OptionsSetting_EnableNotifications"
+			android:layout_height="match_parent"
+			android:layout_weight="45"
+			android:layout_width="0dp"
+			android:text="Enable notifications: "
+			android:layout_gravity="bottom"
+			android:thumb="@drawable/ic_notification"
+			android:layout_marginLeft="10dp"
+			/>
+		<View
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="25"
+			/>
+		<ImageView
+			android:id="@+id/Activity_OptionsSetting_StartWorkoutImageButton"
+			android:layout_height="match_parent"
+			android:layout_width="0dp"
+			android:layout_weight="30"
+			android:src="@drawable/ic_startwork"
+			android:layout_marginRight="10dp"
+			/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WorkoutTimer.Activities.OptionsSettingActivity">
+    <Position X="1.25" Y="13.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQQAAAQgAAAECAAAAAAACAAAAAgBAAAAJAAAQA=</HashCode>
+      <FileName>Activities\OptionsSettingActivity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Android.Support.V7.App.AppCompatActivity">
+    <Position X="1" Y="6.5" Width="3.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WorkoutTimer.Activities.WorkoutActivity">
+    <Position X="15.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ABAIAAAAAAAggBAAEABAAQUCCCEAAAICBCBAIBBAKAA=</HashCode>
+      <FileName>Activities\WorkoutActivity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorkoutTimer.Helpers.WorkoutCountDownTimer">
+    <Position X="20.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQCAAAAAAAACAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Helpers\WorkoutCountDownTimer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorkoutTimer.Managers.TrainManager">
+    <Position X="4.25" Y="1.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ACCAEAgAAAAYAAIAAQAAAAEAACAAAAEAAAAAAARAAAA=</HashCode>
+      <FileName>Managers\TrainManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="WorkoutTimer.Models.TrainingModel">
+    <Position X="7.75" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAgAAAAAQAAAEAABAAAQAAEA=</HashCode>
+      <FileName>Models\TrainingModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorkoutTimer.Utils.TrainChangeEventArgs">
+    <Position X="1.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAAAABAAAAAA=</HashCode>
+      <FileName>Utils\TrainChangeEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorkoutTimer.Utils.WorkoutTimerChangesEventArgs">
+    <Position X="10.75" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\WorkoutTimerChangesEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorkoutTimer.Views.NumericalOptionView">
+    <Position X="23" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAYAAAEQAAAAAEAAAMAAAAAQBAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\NumericalOptionView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorkoutTimer.Views.TimeOptionView">
+    <Position X="18.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAIQAAYAAAAQAAAAAEAAAMACAAAQBAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TimeOptionView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="WorkoutTimer.Helpers.TimeStruct">
+    <Position X="21.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAQAAACAAAAAAAAAAAAQABAADAAAA=</HashCode>
+      <FileName>Helpers\TimeStruct.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="WorkoutTimer.Utils.State">
+    <Position X="18.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAACAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\TrainChangeEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WorkoutTimer</string>
+    <string name="action_settings">Settings</string>
+</resources>
