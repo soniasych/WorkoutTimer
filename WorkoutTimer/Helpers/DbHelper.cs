@@ -10,7 +10,7 @@ namespace WorkoutTimer.Helpers
 {
     public static class DbHelper
     {
-        internal static void SaveTrainingData(TrainingModel modelToSave)
+        internal static void SaveTrainingData(TrainingDTO modelToSave)
         {
             var dto = new TrainingDTO
                 (

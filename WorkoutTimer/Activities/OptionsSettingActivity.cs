@@ -71,18 +71,18 @@ namespace WorkoutTimer.Activities
             }));
 
             StartActivity(intent);
+            SaveTraining();
         }
 
         private void SaveTraining() // REWRITE TO EVENT!!!
         {
-            TrainingModel modelToSave = new TrainingModel
+            TrainingDTO modelToSave = new TrainingDTO
             {
                 ExercisesNumber = _exercisesCountOptionView.GetValue(),
                 SetsNumber = _setsCountOptionView.GetValue(),
-                SetsNumberCopy = _setsCountOptionView.GetValue(),
-                RestInterval = _restIntervalOptionView.GetValue(),
-                WorkInterval = _workIntervalOptionView.GetValue(),
-                RestBetweenExercisesInterval = _restBetweenExercisesOptionView.GetValue(),
+                RestInterval = _restIntervalOptionView.GetValue().ToString(),
+                WorkInterval = _workIntervalOptionView.GetValue().ToString(),
+                RestBetweenExercisesInterval = _restBetweenExercisesOptionView.GetValue().ToString(),
                 IsNotificationsEnabled = _enableNotificationsSwitch.Checked
             };
 
