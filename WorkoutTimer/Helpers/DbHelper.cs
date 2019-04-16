@@ -2,6 +2,9 @@
 using System.IO;
 using SQLitePCL;
 using WorkoutTimer.Models;
+using SQLite;
+using SQLitePCL;
+using System.IO;
 
 namespace WorkoutTimer.Helpers
 {
@@ -19,7 +22,14 @@ namespace WorkoutTimer.Helpers
                 modelToSave.IsNotificationsEnabled
                 );
             // Tonn of logic
-            // db.Insert(modelToSave);
+
+            string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "Training.db3");
+
+            var db = new SQLiteConnection(dbPath);
+
+            db.CreateTable<TrainingDTO>();
+
+            db.Insert(modelToSave);
         }
     }
 }
