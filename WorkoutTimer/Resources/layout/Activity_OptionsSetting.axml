@@ -70,6 +70,12 @@
 			android:thumb="@drawable/ic_notification"
 			android:layout_marginLeft="10dp"
 			/>
+        <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/button1"
+            android:clickable="true" />
 		<View
 			android:layout_height="wrap_content"
 			android:layout_width="0dp"

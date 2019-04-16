@@ -23,11 +23,13 @@ namespace WorkoutTimer.Activities
 
         private ImageView _starWorkoutImageView;
         private Switch _enableNotificationsSwitch;
+        private Button _getDataButton;
 
         protected override void OnStart()
         {
             base.OnStart();
             _starWorkoutImageView.Click += _starWorkoutImageView_Click;
+            _getDataButton.Click += _getDataButton_Click;
 
         }
 
@@ -54,6 +56,22 @@ namespace WorkoutTimer.Activities
 
             _starWorkoutImageView = FindViewById<ImageView>(Resource.Id.Activity_OptionsSetting_StartWorkoutImageButton);
             _enableNotificationsSwitch = FindViewById<Switch>(Resource.Id.Activity_OptionsSetting_EnableNotifications);
+            _getDataButton = FindViewById<Button>(Resource.Id.button1);
+        }
+
+
+        private void _getDataButton_Click(object sender, System.EventArgs e)
+        {
+            var intent = new Intent(this, typeof(TrainingListActivity));
+            intent.PutExtra("TrainingInfo", JsonConvert.SerializeObject(new TrainingDTO()
+            {
+                ExercisesNumber = _exercisesCountOptionView.GetValue(),
+                SetsNumber = _setsCountOptionView.GetValue(),
+                RestInterval = _restIntervalOptionView.GetValue().ToString(),
+                WorkInterval = _workIntervalOptionView.GetValue().ToString(),
+                RestBetweenExercisesInterval = _restBetweenExercisesOptionView.GetValue().ToString(),
+                IsNotificationsEnabled = _enableNotificationsSwitch.Checked
+            }));
         }
 
         private void _starWorkoutImageView_Click(object sender, System.EventArgs e)
@@ -73,6 +91,8 @@ namespace WorkoutTimer.Activities
             StartActivity(intent);
             SaveTraining();
         }
+
+
 
         private void SaveTraining() // REWRITE TO EVENT!!!
         {
