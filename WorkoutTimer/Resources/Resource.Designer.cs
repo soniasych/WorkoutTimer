@@ -2396,41 +2396,41 @@ namespace WorkoutTimer
 			// aapt resource value: 0x7f080037
 			public const int SYM = 2131230775;
 			
-			// aapt resource value: 0x7f0800ba
-			public const int View_NumericalOption_OptionLayout = 2131230906;
-			
-			// aapt resource value: 0x7f0800bc
-			public const int View_NumericalOption_OptionMinusValueImageView = 2131230908;
-			
 			// aapt resource value: 0x7f0800bb
-			public const int View_NumericalOption_OptionNameTextView = 2131230907;
-			
-			// aapt resource value: 0x7f0800be
-			public const int View_NumericalOption_OptionPlusValueImageView = 2131230910;
+			public const int View_NumericalOption_OptionLayout = 2131230907;
 			
 			// aapt resource value: 0x7f0800bd
-			public const int View_NumericalOption_OptionValueEditText = 2131230909;
+			public const int View_NumericalOption_OptionMinusValueImageView = 2131230909;
 			
-			// aapt resource value: 0x7f0800c3
-			public const int View_TimeOption_DeviderTextView = 2131230915;
+			// aapt resource value: 0x7f0800bc
+			public const int View_NumericalOption_OptionNameTextView = 2131230908;
 			
 			// aapt resource value: 0x7f0800bf
-			public const int View_TimeOption_OptionLayout = 2131230911;
+			public const int View_NumericalOption_OptionPlusValueImageView = 2131230911;
 			
-			// aapt resource value: 0x7f0800c1
-			public const int View_TimeOption_OptionMinusValueImageView = 2131230913;
-			
-			// aapt resource value: 0x7f0800c2
-			public const int View_TimeOption_OptionMinutesValueTextView = 2131230914;
-			
-			// aapt resource value: 0x7f0800c0
-			public const int View_TimeOption_OptionNameTextView = 2131230912;
-			
-			// aapt resource value: 0x7f0800c5
-			public const int View_TimeOption_OptionPlusValueImageView = 2131230917;
+			// aapt resource value: 0x7f0800be
+			public const int View_NumericalOption_OptionValueEditText = 2131230910;
 			
 			// aapt resource value: 0x7f0800c4
-			public const int View_TimeOption_OptionSecondsValueTextView = 2131230916;
+			public const int View_TimeOption_DeviderTextView = 2131230916;
+			
+			// aapt resource value: 0x7f0800c0
+			public const int View_TimeOption_OptionLayout = 2131230912;
+			
+			// aapt resource value: 0x7f0800c2
+			public const int View_TimeOption_OptionMinusValueImageView = 2131230914;
+			
+			// aapt resource value: 0x7f0800c3
+			public const int View_TimeOption_OptionMinutesValueTextView = 2131230915;
+			
+			// aapt resource value: 0x7f0800c1
+			public const int View_TimeOption_OptionNameTextView = 2131230913;
+			
+			// aapt resource value: 0x7f0800c6
+			public const int View_TimeOption_OptionPlusValueImageView = 2131230918;
+			
+			// aapt resource value: 0x7f0800c5
+			public const int View_TimeOption_OptionSecondsValueTextView = 2131230917;
 			
 			// aapt resource value: 0x7f0800a9
 			public const int action0 = 2131230889;
@@ -2675,8 +2675,8 @@ namespace WorkoutTimer
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800c7
-			public const int masked = 2131230919;
+			// aapt resource value: 0x7f0800c8
+			public const int masked = 2131230920;
 			
 			// aapt resource value: 0x7f0800ac
 			public const int media_actions = 2131230892;
@@ -2873,6 +2873,9 @@ namespace WorkoutTimer
 			// aapt resource value: 0x7f080069
 			public const int textSpacerNoTitle = 2131230825;
 			
+			// aapt resource value: 0x7f0800ba
+			public const int textView1 = 2131230906;
+			
 			// aapt resource value: 0x7f0800a5
 			public const int text_input_password_toggle = 2131230885;
 			
@@ -2930,8 +2933,8 @@ namespace WorkoutTimer
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800c6
-			public const int visible = 2131230918;
+			// aapt resource value: 0x7f0800c7
+			public const int visible = 2131230919;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;

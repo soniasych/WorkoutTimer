@@ -19,7 +19,7 @@ namespace WorkoutTimer.Activities
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your application here
+            SetContentView(Resource.Layout.TrainingList);
         }
     }
 }
