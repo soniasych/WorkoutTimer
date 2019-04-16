@@ -42,5 +42,15 @@ namespace WorkoutTimer.Models
             this.IsNotificationsEnabled = isNotificationsEnabled;
 
         }
+
+        public override string ToString()
+        {
+            return "Exercises Number" + " " + ExercisesNumber + "\n" +
+                   "Sets Number" + " " + SetsNumber + "\n" +
+                   "Work Interval" + " " + WorkInterval + "\n" +
+                   "Rest Interval" + " " + RestInterval + "\n" +
+                   "Rest Between Exercises Interval" + " " + RestBetweenExercisesInterval + "\n" +
+                   "Is Notifications Enabled" + " " + IsNotificationsEnabled + "\n\n";
+        }
     }
 }
