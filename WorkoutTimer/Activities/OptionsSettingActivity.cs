@@ -63,7 +63,7 @@ namespace WorkoutTimer.Activities
         private void _getDataButton_Click(object sender, System.EventArgs e)
         {
             var intent = new Intent(this, typeof(TrainingListActivity));
-            intent.PutExtra("TrainingInfo", JsonConvert.SerializeObject(new TrainingDTO()
+            intent.PutExtra("GetTrainingInfo", JsonConvert.SerializeObject(new TrainingDTO()
             {
                 ExercisesNumber = _exercisesCountOptionView.GetValue(),
                 SetsNumber = _setsCountOptionView.GetValue(),
@@ -72,6 +72,8 @@ namespace WorkoutTimer.Activities
                 RestBetweenExercisesInterval = _restBetweenExercisesOptionView.GetValue().ToString(),
                 IsNotificationsEnabled = _enableNotificationsSwitch.Checked
             }));
+            StartActivity(intent);
+            GetTraining();
         }
 
         private void _starWorkoutImageView_Click(object sender, System.EventArgs e)
@@ -107,6 +109,20 @@ namespace WorkoutTimer.Activities
             };
 
             DbHelper.SaveTrainingData(modelToSave);
+        }
+
+        private void GetTraining()
+        {
+            TrainingDTO modelToGet = new TrainingDTO
+            {
+                ExercisesNumber = _exercisesCountOptionView.GetValue(),
+                SetsNumber = _setsCountOptionView.GetValue(),
+                RestInterval = _restIntervalOptionView.GetValue().ToString(),
+                WorkInterval = _workIntervalOptionView.GetValue().ToString(),
+                RestBetweenExercisesInterval = _restBetweenExercisesOptionView.GetValue().ToString(),
+                IsNotificationsEnabled = _enableNotificationsSwitch.Checked
+            };
+            DbHelper.GetTrainingData();
         }
 
     }

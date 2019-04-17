@@ -22,5 +22,34 @@ namespace WorkoutTimer.Models
         public TimeStruct RestInterval { get; set; }
         public TimeStruct RestBetweenExercisesInterval { get; set; }
         public bool IsNotificationsEnabled { get; set; }
+
+        public TrainingModel() { }
+
+        public TrainingModel(int exercisesNumber,
+            int setsNumber,
+            int setsNumberCopy,
+            TimeStruct workInterval,
+            TimeStruct restInterval,
+            TimeStruct restBetweenExercisesInterval,
+            bool isNotificationsEnabled)
+        {
+            this.ExercisesNumber = exercisesNumber;
+            this.SetsNumber = setsNumber;
+            this.SetsNumberCopy = setsNumberCopy;
+            this.WorkInterval = workInterval;
+            this.RestInterval = restInterval;
+            this.RestBetweenExercisesInterval = restBetweenExercisesInterval;
+            this.IsNotificationsEnabled = isNotificationsEnabled;
+
+        }
+        public override string ToString()
+        {
+            return $"Exercises Number {ExercisesNumber} \n " +
+                   $"Sets Number {SetsNumber} \n" +
+                   $"Work Interval {WorkInterval.Minutes}:{WorkInterval.Seconds} \n" +
+                   $"Rest Interval {RestInterval.Minutes}:{RestInterval.Seconds} \n" +
+                   $"Rest Between Exercises Interval {RestBetweenExercisesInterval.Minutes}:{RestBetweenExercisesInterval.Seconds} \n" +
+                   $"{(IsNotificationsEnabled ? "Notification Enabled" : "Notification Disabled")} \n\n";
+        }
     }
 }

@@ -9,11 +9,14 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using SQLite;
 
 namespace WorkoutTimer.Models
 {
+    [Table("Training")]
     class TrainingDTO
     {
+        [PrimaryKey, AutoIncrement, Column("_id")]
         public int Id { get; set; }
         public int ExercisesNumber { get; set; }
         public int SetsNumber { get; set; }
